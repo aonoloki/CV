@@ -10,6 +10,10 @@
   font-family: 'heracles';
   src: url('../fonts/the_constellation_of_heracles/Heracles.ttf')
 }
+@font-face {
+  font-family: 'angelface';
+  src: url('../fonts/Angelface/Angelface.otf')
+}
 
 
 body {
@@ -18,9 +22,26 @@ body {
 
 .nav {
   background-image: url('../img/navfont.png');
+  box-shadow: 1px 1px #FFF;
 }
 
-img {
+.lang {
+  margin-top: 3vh;
+  list-style-type: none;
+  font-family: 'good-night';
+}
+
+.lang a {
+  color: #6EA391;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+.lang a:hover {
+  color: #F7EEAD;
+}
+
+.portrait {
   margin-top: 2.5vh;
   margin-left: 2.5vh;
   border-radius: 50%
@@ -45,6 +66,7 @@ h1 {
 h2 {
   text-align: center;
   font-family: 'stardust';
+  text-shadow: 1px 1px #FFF;
 }
 
 .art {
@@ -53,6 +75,21 @@ h2 {
 }
 
 ul, p {
-  font-family: 'good-night';
-  font-weight: bold;
+  font-family: 'angelface';
+  font-size: 4vh;
+  font-weight: 400;
+  color: #111;
+}
+
+p a {
+  color: #111;
+  text-decoration: underline;
+}
+
+p a:hover {
+  color: #FD580E;
+}
+
+ul {
+  list-style-type: none;
 }
