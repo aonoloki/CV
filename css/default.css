@@ -70,8 +70,13 @@ h2 {
 }
 
 .art {
+  margin-bottom: 6vh;
   border: 1px solid #FFF;
   background-color: rgba(255, 255, 255, 0.5)
+}
+
+.date {
+  font-weight: 600;
 }
 
 ul, p {
