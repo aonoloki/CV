@@ -12,12 +12,8 @@
 }
 
 body {
-  background: url('../img/bodyfont1.jpg') repeat;
-  margin-top: 7.5vh;
-}
-
-.container {
-  margin-bottom: 3vh;
+  background: url('../img/bodyfont1.jpg');
+  margin-top: 5vh;
 }
 
 .head {
@@ -26,9 +22,8 @@ body {
 
 .navbar {
   background-color: rgb(253, 133, 14);
-  height: 10vh;
+
   border-style: none;
-  padding-top: 1vh;
 }
 
 ul.dropdown-menu {
@@ -54,8 +49,8 @@ ul.dropdown-menu {
 }
 
 .navbar-nav {
-  display:inline-block;
-  float:none;
+  display: inline-block;
+  float: none;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -86,6 +81,11 @@ ul.dropdown-menu {
   font-size: 3.5vh;
   text-align: center;
   font-family: 'london';
+}
+
+.dropdown-menu>li>a:hover {
+  text-decoration: none;
+  background-color: rgb(110, 163, 145);
 }
 
 .menu {
@@ -124,7 +124,7 @@ h2 {
 .art {
   margin-bottom: 2vh;
   border: 1px solid #FFF;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(247, 238, 173, 0.7);
   border-radius: 15px;
 }
 
@@ -167,18 +167,17 @@ p a:hover {
  }
 
  .portrait {
-   margin-left: 17vw;
-   margin-top: 3vh;
+   margin-top: 4vh;
  }
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
   h1 {
-    font-size: 8vh;
+    font-size: 10vh;
   }
 
-  .navbar {
-    height: 10.5vh;
+  .portrait {
+    margin-top: 5vh;
   }
 }
 
