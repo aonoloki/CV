@@ -88,6 +88,12 @@ ul.dropdown-menu {
   background-color: rgb(110, 163, 145);
 }
 
+button, html input[type=button],
+input[type=reset],
+input[type=submit] {
+  background-color: rgb(110, 163, 145);
+}
+
 .menu {
   padding-right: 20px;
 }
