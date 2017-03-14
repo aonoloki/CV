@@ -13,6 +13,7 @@
 
 body {
   background: url('../img/bodyfont1.jpg');
+  background-attachment: fixed;
   margin-top: 5vh;
 }
 
@@ -22,7 +23,6 @@ body {
 
 .navbar {
   background-color: rgb(253, 133, 14);
-
   border-style: none;
 }
 
@@ -35,12 +35,6 @@ ul.dropdown-menu {
 .navbar-default .navbar-nav>.open>a:hover {
   color: #555;
   background-color: rgb(253, 133, 14);
-}
-
-.navbar-default
-.navbar-nav>li>a {
-  color: #FFF;
-  text-align: center;
 }
 
 .navbar-collapse {
@@ -83,14 +77,30 @@ ul.dropdown-menu {
   font-family: 'london';
 }
 
+
+.navbar-default .navbar-nav>.open>a:hover {
+  color: #555;
+}
+
 .dropdown-menu>li>a:hover {
   text-decoration: none;
   background-color: rgb(110, 163, 145);
 }
 
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+  color: #555;
+}
+
 button, html input[type=button],
 input[type=reset],
 input[type=submit] {
+  background-color: rgb(253, 133, 14);
+  width: 100%;
+}
+
+button, html input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
   background-color: rgb(110, 163, 145);
 }
 
@@ -164,8 +174,6 @@ p a {
 p a:hover {
   color: #E9004F;
 }
-
-
 
 @media screen and (max-width:767px) {
  h1 {

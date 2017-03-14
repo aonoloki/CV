@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'leixo';
+  src: url('../fonts/leixo/leixo.ttf')
+}
+@font-face {
+  font-family: 'London';
+  src: url('../fonts/London/LondonMM.ttf')
+}
+@font-face {
+  font-family: 'raspoutine';
+  src: url('../fonts/raspoutine/Raspoutine.otf')
+}
+
+body {
+  margin: 5%;
+}
+
+.portrait {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+h1 {
+  font-family: 'leixo';
+  font-size: 6vh;
+  text-align: center;
+  color: #FFF;
+}
+
+.quote {
+  font-family: 'raspoutine';
+  text-align: center;
+  color: #FFF;
+  font-size: 2vh;
+  font-weight: normal;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'London';
+  text-shadow: 1px 1px #FFF;
+  font-weight: bold;
+  color: blue;
+}
+
+.art {
+  margin-bottom: 2vh;
+  border: 1px solid #FFF;
+  background-color: rgba(247, 238, 173, 0.7);
+  border-radius: 15px;
+}
+
+.date {
+  font-weight: 600;
+}
+
+ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul.exp {
+  text-align: left;
+}
+
+ul, p {
+  font-family: 'London';
+  font-size: 2vh;
+  font-weight: 400;
+  color: #111;
+}
+
+p a {
+  color: #111;
+  text-decoration: underline;
+}
+
+p a:hover {
+  color: #E9004F;
+}
