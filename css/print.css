@@ -21,6 +21,10 @@ body {
   border-radius: 50%;
 }
 
+.altimg {
+  display: none;
+}
+
 h1 {
   font-family: 'leixo';
   font-size: 6vh;
