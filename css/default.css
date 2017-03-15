@@ -12,7 +12,7 @@
 }
 
 body {
-  background: url('../img/bodyfont1.jpg');
+  background: url('../img/bodyfont.jpg');
   background-attachment: fixed;
   margin-top: 5vh;
 }
@@ -91,14 +91,14 @@ ul.dropdown-menu {
   color: #555;
 }
 
-button, html input[type=button],
+#bouton-imprimer, html input[type=button],
 input[type=reset],
 input[type=submit] {
   background-color: rgb(253, 133, 14);
   width: 100%;
 }
 
-button, html input[type=button]:hover,
+#bouton-imprimer, html input[type=button]:hover,
 input[type=reset]:hover,
 input[type=submit]:hover {
   background-color: rgb(110, 163, 145);
@@ -173,6 +173,11 @@ p a {
 
 p a:hover {
   color: #E9004F;
+}
+
+.footer {
+  text-align: center;
+  background-color: rgb(110, 163, 145);
 }
 
 @media screen and (max-width:767px) {
