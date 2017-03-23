@@ -18,6 +18,7 @@ body {
 
 .head {
   background-image: url('../img/navfont.png');
+  margin-top: -3vh;
 }
 
 .navbar {
@@ -122,6 +123,7 @@ h1 {
 }
 
 .quote {
+  margin-top: 2vh;
   font-family: 'raspoutine';
   text-align: center;
   color: #FFF;
@@ -212,6 +214,7 @@ footer.footer.navbar-fixed-bottom {
 
  .social {
    padding-right: 2vw;
+   height: 4vh;
  }
 }
 
