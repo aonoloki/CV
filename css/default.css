@@ -19,7 +19,14 @@ body.out {
 img.flag {
   display: block;
   height: 250px;
+  width: 500px;
   margin: auto;
+}
+
+.choice {
+  font-family: 'raspoutine';
+  text-align: center;
+  color: #FFF;
 }
 
 body.in {
@@ -223,6 +230,12 @@ footer.footer.navbar-fixed-bottom {
 /*BEGINNING OF MEDIA QUERIES*/
 
 @media screen and (max-width:767px) {
+  img.flag {
+    height: 100px;
+    width: 200px;
+    margin-bottom: 1vh;
+  }
+
 .navbar-default .navbar-nav>li>a {
   font-size: 3vh;
 }
@@ -253,6 +266,12 @@ footer.footer.navbar-fixed-bottom {
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
+  img.flag {
+    height: 100px;
+    width: 200px;
+    margin-bottom: 1vh;
+  }
+
   .navbar-default .navbar-nav>li>a {
     font-size: 3.5vh;
   }
@@ -283,6 +302,12 @@ footer.footer.navbar-fixed-bottom {
 }
 
 @media screen and (min-width:992px) and (max-width:1199px) {
+  img.flag {
+    height: 200px;
+    width: 400px;
+    margin-bottom: 1vh;
+  }
+
   h1 {
     font-size: 9vh;
   }
