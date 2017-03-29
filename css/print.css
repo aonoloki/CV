@@ -16,12 +16,6 @@ body {
 }
 
 .portrait {
-  display: block;
-  margin: auto;
-  border-radius: 50%;
-}
-
-a .portrait .href {
   display: none;
 }
 
@@ -40,7 +34,7 @@ h1 {
   font-family: 'raspoutine';
   text-align: center;
   color: #FFF;
-  font-size: 2vh;
+  font-size: 1.5vh;
   font-weight: normal;
 }
 
@@ -82,7 +76,7 @@ ul, p {
 
 p a {
   color: #111;
-  text-decoration: underline;
+  text-decoration: none;s
 }
 
 .footer {

@@ -5,6 +5,7 @@
   <title> RG </title>
   <link rel="icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" style="text/css" href="css/default.css">
   <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
@@ -12,8 +13,9 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/print.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
 </head>
-<body>
+<body class="in">
   <header id="top">
     <nav class="navbar navbar-default navbar-top">
       <div class="container">
@@ -24,7 +26,7 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-        <div class="navbar-collapse collapse">
+        <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a class="js-scrollTo" href="#exp">Experiences</a></li>
             <li><a class="js-scrollTo" href="#comp">Skills</a></li>
@@ -46,17 +48,16 @@
     </nav>
     <div class="container head">
       <div class="row">
-        <div class="col-md-offset-5 col-md-2 col-md-offset-5">
-          <a class="portrait" href="img/portrait.jpg" target="_blank">
+        <div class="col-md-5">
+          <h1>ROMAIN</h1>
+        </div>
+        <div class="col-md-2">
+          <a data-fancybox="gallery" class="portrait" href="img/portrait.jpg">
             <img class="portrait" src="img/portrait-mini.jpg" alt="Portrait" title="Clic to zoom">
           </a>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h1>ROMAIN GORGIBUS</h1>
-            </div>
-          </div>
+        <div class="col-md-5">
+          <h1>GORGIBUS</h1>
         </div>
       </div>
     </div>
@@ -64,7 +65,7 @@
       <div class="row">
         <div class="col-md-12">
           <p class="quote">
-            " Our greatest glory is not in never falling, but in rising every time we fall. "
+            " while(noSuccess){ tryAgain(); if(Dead) break; else(Success) improve; } "
           </p>
         </div>
       </div>
@@ -77,6 +78,7 @@
         <ul class="exp">
           <li><span class="date">2011-2014</span>: Socials and economics studies</li>
           <li><span class="date">June to September 2016</span>: Order picker</li>
+          <li><span class="date">January to July 2017</span>: Training for devWeb at PopSchool</li>
           <li><span class="date">1996-2017</span>: Explorer of the void</li>
         </ul>
       </article>
@@ -89,18 +91,18 @@
         <div class="row">
           <div class="col-sm-6 col-md-6">
             <ul>
-              <li>HTML5, CSS3</li>
               <li>OS Keepup</li>
               <li>System partition</li>
-              <li>Audio montage</li>
+              <li>Build a computer</li>
+              <li>Video/Audio/Picture montages</li>
             </ul>
           </div>
           <div class="col-sm-6 col-md-6">
             <ul>
-              <li>Bootstrap</li>
-              <li>Javascript</li>
+              <li>HTML5, CSS3</li>
+              <li>Ruby / Ruby On Rails</li>
+              <li>Javascript / Jquery / Ajax</li>
               <li>PHP</li>
-              <li>Video montage</li>
             </ul>
           </div>
         </div>
@@ -112,14 +114,30 @@
       <article class="col-md-12 art">
         <h2>My career</h2>
         <p>
-          I've done my first attempt at coding on <a href="https://www.codeschool.com/users/AoNoLoki" target="_blank">CodeSchool</a> and <a href="https://www.codecademy.com/fr/AoNoLoki" target="_blank">CodeCademy</a>.<br>
+          I discovered most of the coding concepts as a self-taught coder, with some practice, I acquired a base to begin to write my own lines of codes.<br>
+          A part of my practice was on <a href="https://www.codeschool.com/users/AoNoLoki" target="_blank">CodeSchool</a> and <a href="https://www.codecademy.com/fr/AoNoLoki" target="_blank">CodeCademy</a>.
           OpenClassRoom gonna be an other plateform where I'm gonna be able to learn more about coding.<br>
-          I did a training at PopSchool to be in a great environment to learn and study.
+          I did a training at PopSchool to be in a great environment to learn and study even further in the web devlopment.
         </p>
       </article>
     </div>
   </div>
   <footer id="feed" class="container-fluid">
+    <div class="row footer">
+      <div class="col-md-12">
+        <h2>
+          Don't hesitate to contact me
+        </h2>
+        <form action="mailto:r.gorgibus@gmail.com" method="GET">
+          <img class="conImg" src="img/mail.png" alt="mail">
+          <input class="input" type="submit" value="Send a mail">
+        </form>
+        <p>
+          <img class="conImg" src="img/phone.png" alt="phone">
+          06.24.34.30.96
+        </p>
+      </div>
+    </div>
     <div class="row footer">
       <div class="col-md-12">
         <a href="https://www.facebook.com/romain.gorgibusmg" target="_blank"><img class="social" src="img/facebookLogo.png" alt="Facebook"></a>

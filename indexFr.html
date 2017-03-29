@@ -5,6 +5,7 @@
   <title> RG </title>
   <link rel="icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" style="text/css" href="css/default.css">
   <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
@@ -12,8 +13,9 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/print.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
 </head>
-<body>
+<body class="in">
   <header id="top">
     <nav class="navbar navbar-default navbar-top">
       <div class="container">
@@ -24,7 +26,7 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-        <div class="navbar-collapse collapse">
+        <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a class="js-scrollTo" href="#exp">Expériences</a></li>
             <li><a class="js-scrollTo" href="#comp">Compétences</a></li>
@@ -39,24 +41,23 @@
                 <li><input type="button" id="button-imprimer" value="Imprimer"></li>
                 <li><a href="pdf/CVFR.pdf" download>Télécharger le pdf</a></li>
               </ul>
-            </li>
+            </liN
           </ul>
         </div>
       </div>
     </nav>
     <div class="container head">
       <div class="row">
-        <div class="col-md-offset-5 col-md-2 col-md-offset-5">
-          <a class="portrait" href="img/portrait.jpg" target="_blank">
-            <img class="portrait" src="img/portrait-mini.jpg" alt="Portrait" title="Cliquez pour zoomer">
+        <div class="col-md-5">
+          <h1>ROMAIN</h1>
+        </div>
+        <div class="col-md-2">
+          <a data-fancybox="gallery" class="portrait" href="img/portrait.jpg">
+            <img class="portrait" src="img/portrait-mini.jpg" alt="Portrait" title="Clic to zoom">
           </a>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h1>ROMAIN GORGIBUS</h1>
-            </div>
-          </div>
+        <div class="col-md-5">
+          <h1>GORGIBUS</h1>
         </div>
       </div>
     </div>
@@ -64,7 +65,7 @@
       <div class="row">
         <div class="col-md-12">
           <p class="quote">
-            " La plus grande gloire n'est pas de ne jamais tomber, mais de se relever à chaque chute. "
+            " while(noSuccess){ tryAgain(); if(Dead) break; else(Success) improve; } "
           </p>
         </div>
       </div>
@@ -77,6 +78,7 @@
         <ul class="exp">
           <li><span class="date">2011-2014</span>: Etudes économiques et sociales</li>
           <li><span class="date">Juin à Septembre 2016</span>: Préparateur de commande</li>
+          <li><span class="date">Janvier à Juillet 2017</span>: Formation devWeb à PopSchool</li>
           <li><span class="date">1996-2017</span>: Chercheur de voie</li>
         </ul>
       </article>
@@ -89,18 +91,18 @@
         <div class="row">
           <div class="col-sm-6 col-md-6">
             <ul>
-              <li>HTML5, CSS3</li>
               <li>Entretien OS</li>
               <li>Partition DD</li>
-              <li>Montage audio</li>
+              <li>Montage ordinateur</li>
+              <li>Montage vidéo/audio/image</li>
             </ul>
           </div>
           <div class="col-sm-6 col-md-6">
             <ul>
-              <li>Bootstrap</li>
-              <li>Javascript</li>
+              <li>HTML5, CSS3</li>
+              <li>Ruby / Ruby On Rails</li>
+              <li>Javascript / Jquery / Ajax</li>
               <li>PHP</li>
-              <li>Montage vidéo</li>
             </ul>
           </div>
         </div>
@@ -112,14 +114,30 @@
       <article class="col-md-12 art">
         <h2>Ma formation</h2>
         <p>
-          Mes premières lignes de codes proviennent de ces badges sur <a href="https://www.codeschool.com/users/AoNoLoki" target="_blank">CodeSchool</a> et <a href="https://www.codecademy.com/fr/AoNoLoki" target="_blank">CodeCademy</a>.<br>
-          OpenClassRoom va me permettre de renforcer mes acquis et par la suite d'en apprendre encore plus dans le domaine!<br>
+          J'ai acquis beaucoup de connaissances théoriques de façon autodidacte, avec un minimum de pratique j'ai pu acquérir une base suffisante pour faire mes propres codes.<br>
+          Une partie de mon expérience pratique provient de ces badges sur <a href="https://www.codeschool.com/users/AoNoLoki" target="_blank">CodeSchool</a> et <a href="https://www.codecademy.com/fr/AoNoLoki" target="_blank">CodeCademy</a>.
+          OpenClassRoom est une plateforme sur laquelle je pourrais consolider des acquis ou découvrir de nouveaux concepts.<br>
           La formation PopSchool me permet de me spécialiser dans le domaine de développeur web, dans un cadre adapté à l'apprentissage du domaine.
         </p>
       </article>
     </div>
   </div>
   <footer id="feed" class="container-fluid">
+    <div class="row footer">
+      <div class="col-md-12">
+        <h2>
+          N'hésitez pas à me joindre
+        </h2>
+        <form action="mailto:r.gorgibus@gmail.com" method="GET">
+          <img class="conImg" src="img/mail.png" alt="mail">
+          <input class="input" type="submit" value="Envoyer un mail">
+        </form>
+        <p>
+          <img class="conImg" src="img/phone.png" alt="phone">
+          06.24.34.30.96
+        </p>
+      </div>
+    </div>
     <div class="row footer">
       <div class="col-md-12">
         <a href="https://www.facebook.com/romain.gorgibusmg" target="_blank"><img class="social" src="img/facebookLogo.png" alt="Facebook"></a>
