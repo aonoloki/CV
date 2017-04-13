@@ -54,7 +54,6 @@ ul.dropdown-menu {
 .navbar-default .navbar-nav>.open>a:hover {
   color: #FFF;
   background-color: rgb(6, 0, 55);
-  text-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 
 .navbar-collapse {
@@ -64,7 +63,6 @@ ul.dropdown-menu {
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #FFF;
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 
 .navbar-nav {
@@ -72,21 +70,9 @@ ul.dropdown-menu {
   float: none;
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
-  background-color: rgb(255, 255, 255);
-  text-shadow: 0px 0px 20px rgb(255, 255, 255);
-}
-
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   background-color: rgb(6, 0, 55);
-}
-
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
-  text-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -96,8 +82,14 @@ ul.dropdown-menu {
 }
 
 .navbar-default .navbar-nav>li>a:hover {
+
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
   color: #FFF;
-  text-shadow: 0px 0px 20px rgb(255, 255, 255);
+  background-color: #004888;
+  box-shadow: inset 0px 5px #01284A;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu>li,
@@ -114,12 +106,12 @@ ul.dropdown-menu {
 
 .dropdown-menu>li>a:hover {
   text-decoration: none;
-  background-color: rgb(71, 136, 129);
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
   color: #FFF;
-  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  background-color: #004888;
+  box-shadow: inset 0px 5px #01284A;
 }
 
 #bouton-imprimer, html input[type=button],
@@ -133,7 +125,9 @@ input[type=submit] {
 #bouton-imprimer, html input[type=button]:hover,
 input[type=reset]:hover,
 input[type=submit]:hover {
-  background-color: rgb(71, 136, 129);
+  color: #FFF;
+  background-color: #004888;
+  box-shadow: inset 0px 5px #01284A;
 }
 
 .menu {
@@ -175,7 +169,7 @@ h2 {
   border: 1px solid #FFF;
   background-color: rgb(236, 236, 236);
   border-radius: 15px;
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  box-shadow: 0px 5px rgb(155, 155, 155);
 }
 
 .date {
@@ -215,7 +209,7 @@ form {
 }
 
 input[type=submit], .input {
-  background-color: rgb(255, 194, 60);
+  background-color: #004888;
   width: 25%;
   font-family: 'london';
   font-size: 4vh;
@@ -241,8 +235,12 @@ footer.footer.navbar-fixed-bottom {
 
 .arrow {
   height: 32px;
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  box-shadow: 0px 5px #01284A;
   border-radius: 10px;
+}
+
+.js-scrollTo .st-current {
+  color: #FFF;
 }
 
 /*BEGINNING OF MEDIA QUERIES*/
