@@ -19,7 +19,14 @@ body.out {
 img.flag {
   display: block;
   height: 250px;
+  width: 500px;
   margin: auto;
+}
+
+.choice {
+  font-family: 'raspoutine';
+  text-align: center;
+  color: #FFF;
 }
 
 body.in {
@@ -34,19 +41,19 @@ body.in {
 }
 
 .navbar {
-  background-color: rgb(255, 53, 58);
+  background-color: rgb(6, 0, 55);
   border-style: none;
 }
 
 ul.dropdown-menu {
-  background-color: rgb(255, 53, 58);
+  background-color: rgb(6, 0, 55);
 }
 
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:focus,
 .navbar-default .navbar-nav>.open>a:hover {
-  color: #000;
-  background-color: rgb(255, 53, 58);
+  color: #FFF;
+  background-color: rgb(6, 0, 55);
 }
 
 .navbar-collapse {
@@ -54,31 +61,30 @@ ul.dropdown-menu {
   background-color: rgba(0, 0, 0, 0);
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+
 .navbar-nav {
   display: inline-block;
   float: none;
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
-  background-color: rgb(71, 136, 129);
-}
-
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  background-color: rgb(255, 53, 58);
-}
-
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
-  background-color: rgb(71, 136, 129);
+  background-color: rgb(6, 0, 55);
 }
 
 .navbar-default .navbar-nav>li>a {
   color: #FFF;
-  text-align: center;
   font-family: 'london';
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+  color: #FFF;
+  background-color: #004888;
+  box-shadow: inset 0px 5px #01284A;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu>li,
@@ -89,24 +95,24 @@ ul.dropdown-menu {
   font-family: 'london';
 }
 
-
 .navbar-default .navbar-nav>.open>a:hover {
   color: #FFF;
 }
 
 .dropdown-menu>li>a:hover {
   text-decoration: none;
-  background-color: rgb(71, 136, 129);
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
   color: #FFF;
+  background-color: #004888;
+  box-shadow: inset 0px 5px #01284A;
 }
 
 #bouton-imprimer, html input[type=button],
 input[type=reset],
 input[type=submit] {
-  background-color: rgb(255, 53, 58);
+  background-color: rgb(6, 0, 55);
   border-style: none;
   width: 100%;
 }
@@ -114,7 +120,9 @@ input[type=submit] {
 #bouton-imprimer, html input[type=button]:hover,
 input[type=reset]:hover,
 input[type=submit]:hover {
-  background-color: rgb(71, 136, 129);
+  color: #FFF;
+  background-color: #004888;
+  box-shadow: inset 0px 5px #01284A;
 }
 
 .menu {
@@ -139,10 +147,9 @@ h1 {
   margin-top: 2vh;
   font-family: 'raspoutine';
   text-align: center;
-  color: #000;
+  color: #FFF;
   font-size: 4vh;
   font-weight: normal;
-  background-color: rgb(255, 194, 60);
 }
 
 h2 {
@@ -153,10 +160,11 @@ h2 {
 }
 
 .art {
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
   border: 1px solid #FFF;
-  background-color: rgb(225, 255, 152);
+  background-color: rgb(236, 236, 236);
   border-radius: 15px;
+  box-shadow: 0px 5px rgb(155, 155, 155);
 }
 
 .date {
@@ -192,22 +200,23 @@ p a:hover {
 
 form {
   margin: auto;
+  text-align: center;
 }
 
 input[type=submit], .input {
-  background-color: rgb(255, 194, 60);
-  width: 15%;
+  background-color: #004888;
+  width: 25%;
   font-family: 'london';
-  font-size: 3vh;
+  font-size: 4vh;
 }
 
-.conImg {
+.iconImg {
   height: 50px;
 }
 
 .footer {
   text-align: center;
-  background-color: rgb(255, 53, 58);
+  background-color: rgb(6, 0, 55);
 }
 
 footer.footer.navbar-fixed-bottom {
@@ -215,14 +224,29 @@ footer.footer.navbar-fixed-bottom {
   margin-bottom: 2vh;
 }
 
+.foot {
+  text-align: center;
+}
+
 .arrow {
   height: 32px;
-  padding-left: 6vw;
+  box-shadow: 0px 5px #01284A;
+  border-radius: 10px;
+}
+
+.js-scrollTo .st-current {
+  color: #FFF;
 }
 
 /*BEGINNING OF MEDIA QUERIES*/
 
 @media screen and (max-width:767px) {
+  img.flag {
+    height: 100px;
+    width: 200px;
+    margin-bottom: 1vh;
+  }
+
 .navbar-default .navbar-nav>li>a {
   font-size: 3vh;
 }
@@ -236,7 +260,7 @@ footer.footer.navbar-fixed-bottom {
  }
 
  input[type=submit], .input {
-   width: 40%;
+   width: 55%;
  }
 
  .arrow {
@@ -253,6 +277,12 @@ footer.footer.navbar-fixed-bottom {
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
+  img.flag {
+    height: 100px;
+    width: 200px;
+    margin-bottom: 1vh;
+  }
+
   .navbar-default .navbar-nav>li>a {
     font-size: 3.5vh;
   }
@@ -266,7 +296,7 @@ footer.footer.navbar-fixed-bottom {
   }
 
   input[type=submit], .input {
-    width: 20%;
+    width: 25%;
   }
 
   .arrow {
@@ -283,6 +313,12 @@ footer.footer.navbar-fixed-bottom {
 }
 
 @media screen and (min-width:992px) and (max-width:1199px) {
+  img.flag {
+    height: 200px;
+    width: 400px;
+    margin-bottom: 1vh;
+  }
+
   h1 {
     font-size: 9vh;
   }
@@ -296,7 +332,7 @@ footer.footer.navbar-fixed-bottom {
   }
 
   input[type=submit], .input {
-    width: 20%;
+    width: 25%;
   }
 
   .social {
@@ -314,6 +350,12 @@ footer.footer.navbar-fixed-bottom {
 }
 
 @media screen and (min-width:1200px) {
+  img.flag {
+    height: 100px;
+    width: 200px;
+    margin-bottom: 1vh;
+  }
+
   .navbar-default .navbar-nav>li>a {
     font-size: 4vh;
   }
