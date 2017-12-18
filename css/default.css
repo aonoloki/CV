@@ -19,14 +19,14 @@ body.out {
 img.flag {
   display: block;
   height: 250px;
-  width: 500px;
   margin: auto;
+  width: 500px;
 }
 
 .choice {
+  color: #FFF;
   font-family: 'raspoutine';
   text-align: center;
-  color: #FFF;
 }
 
 body.in {
@@ -52,13 +52,13 @@ ul.dropdown-menu {
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:focus,
 .navbar-default .navbar-nav>.open>a:hover {
-  color: #FFF;
   background-color: rgb(6, 0, 55);
+  color: #FFF;
 }
 
 .navbar-collapse {
-  text-align: center;
   background-color: rgba(0, 0, 0, 0);
+  text-align: center;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -76,26 +76,31 @@ ul.dropdown-menu {
 }
 
 .navbar-default .navbar-nav>li>a {
+  background-color: rgb(6, 0, 55);
   color: #FFF;
   font-family: 'london';
+  margin: 0 10px;
+  transition: all 1s;
 }
 
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
-  color: #FFF;
   background-color: #004888;
-  box-shadow: inset 0px 5px #01284A;
+  box-shadow: inset 0 5px #01284A;
+  color: #FFF;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu>li,
 .navbar-default .navbar-nav .open .dropdown-menu>li>a {
   color: #FFF;
+  font-family: 'london';
   font-size: 3.5vh;
   text-align: center;
-  font-family: 'london';
+  transition: all 1s;
 }
 
 .navbar-default .navbar-nav>.open>a:hover {
+  background-color: #004888;
   color: #FFF;
 }
 
@@ -104,25 +109,31 @@ ul.dropdown-menu {
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
-  color: #FFF;
   background-color: #004888;
-  box-shadow: inset 0px 5px #01284A;
+  box-shadow: inset 0 5px #01284A;
+  color: #FFF;
 }
 
-#bouton-imprimer, html input[type=button],
+.dropdown-menu .divider {
+  margin: 0!important;
+}
+
+.bprint, html input[type=button],
 input[type=reset],
 input[type=submit] {
   background-color: rgb(6, 0, 55);
   border-style: none;
+  box-shadow: none;
+  transition: all 1s;
   width: 100%;
 }
 
-#bouton-imprimer, html input[type=button]:hover,
+.bprint, html input[type=button]:hover,
 input[type=reset]:hover,
 input[type=submit]:hover {
-  color: #FFF;
   background-color: #004888;
-  box-shadow: inset 0px 5px #01284A;
+  box-shadow: inset 0 5px #01284A;
+  color: #FFF;
 }
 
 .menu {
@@ -130,41 +141,41 @@ input[type=submit]:hover {
 }
 
 .portrait {
+  border-radius: 50%;
   display: block;
   margin: 2vh auto -2vh auto;
-  border-radius: 50%;
 }
 
 h1 {
+  color: #FFF;
   font-family: 'leixo';
   font-size: 8vh;
   text-align: center;
-  color: #FFF;
   text-shadow: 1px 3px #000;
 }
 
 .quote {
-  margin-top: 2vh;
-  font-family: 'raspoutine';
-  text-align: center;
   color: #FFF;
+  font-family: 'raspoutine';
   font-size: 4vh;
   font-weight: normal;
+  margin-top: 2vh;
+  text-align: center;
 }
 
 h2 {
-  text-align: center;
   font-family: 'London';
-  text-shadow: 1px 1px #FFF;
   font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px #FFF;
 }
 
 .art {
-  margin-bottom: 4vh;
-  border: 1px solid #FFF;
   background-color: rgb(236, 236, 236);
+  border: 1px solid #FFF;
   border-radius: 15px;
-  box-shadow: 0px 5px rgb(155, 155, 155);
+  box-shadow: 0 5px rgb(155, 155, 155);
+  margin-bottom: 4vh;
 }
 
 .date {
@@ -172,10 +183,10 @@ h2 {
 }
 
 ul {
-  text-align: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 ul.exp {
@@ -183,10 +194,10 @@ ul.exp {
 }
 
 ul, p {
+  color: #111;
   font-family: 'London';
   font-size: 4vh;
   font-weight: 400;
-  color: #111;
 }
 
 p a {
@@ -205,9 +216,9 @@ form {
 
 input[type=submit], .input {
   background-color: #004888;
-  width: 25%;
   font-family: 'london';
   font-size: 4vh;
+  width: 25%;
 }
 
 .iconImg {
@@ -215,8 +226,8 @@ input[type=submit], .input {
 }
 
 .footer {
-  text-align: center;
   background-color: rgb(6, 0, 55);
+  text-align: center;
 }
 
 footer.footer.navbar-fixed-bottom {
@@ -229,9 +240,9 @@ footer.footer.navbar-fixed-bottom {
 }
 
 .arrow {
-  height: 32px;
-  box-shadow: 0px 5px #01284A;
   border-radius: 10px;
+  box-shadow: 0px 5px #01284A;
+  height: 32px;
 }
 
 .js-scrollTo .st-current {
@@ -243,8 +254,8 @@ footer.footer.navbar-fixed-bottom {
 @media screen and (max-width:767px) {
   img.flag {
     height: 100px;
-    width: 200px;
     margin-bottom: 1vh;
+    width: 200px;
   }
 
 .navbar-default .navbar-nav>li>a {
@@ -265,14 +276,14 @@ footer.footer.navbar-fixed-bottom {
 
  .arrow {
    bottom: 1vh;
-   right: 1vw;
    position: fixed;
+   right: 1vw;
  }
 
  .social {
-   padding: auto 2vw;
-   margin: 1vh 2vw;
    height: 8vh;
+   margin: 1vh 2vw;
+   padding: auto 2vw;
  }
 }
 

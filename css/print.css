@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'leixo';
-  src: url('../fonts/leixo/leixo.ttf')
+  src: url('../fonts/leixo/leixo.ttf');
 }
 @font-face {
   font-family: 'London';
-  src: url('../fonts/London/LondonMM.ttf')
+  src: url('../fonts/London/LondonMM.ttf');
 }
 @font-face {
   font-family: 'raspoutine';
-  src: url('../fonts/raspoutine/Raspoutine.otf')
+  src: url('../fonts/raspoutine/Raspoutine.otf');
 }
 
 body {
@@ -24,33 +24,33 @@ body {
 }
 
 h1 {
+  color: #FFF;
   font-family: 'leixo';
   font-size: 6vh;
   text-align: center;
-  color: #FFF;
 }
 
 .quote {
-  font-family: 'raspoutine';
-  text-align: center;
   color: #FFF;
+  font-family: 'raspoutine';
   font-size: 1.5vh;
   font-weight: normal;
+  text-align: center;
 }
 
 h2 {
-  text-align: center;
-  font-family: 'London';
-  text-shadow: 1px 1px #FFF;
-  font-weight: bold;
   color: blue;
+  font-family: 'London';
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px #FFF;
 }
 
 .art {
-  margin-bottom: 2vh;
-  border: 1px solid #FFF;
   background-color: rgba(247, 238, 173, 0.7);
+  border: 1px solid #FFF;
   border-radius: 15px;
+  margin-bottom: 2vh;
 }
 
 .date {
@@ -58,9 +58,9 @@ h2 {
 }
 
 ul {
-  text-align: center;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 ul.exp {
@@ -68,15 +68,15 @@ ul.exp {
 }
 
 ul, p {
+  color: #111;
   font-family: 'London';
   font-size: 2vh;
   font-weight: 400;
-  color: #111;
 }
 
 p a {
   color: #111;
-  text-decoration: none;s
+  text-decoration: none;
 }
 
 .footer {
