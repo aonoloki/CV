@@ -11,11 +11,6 @@
   src: url('../fonts/raspoutine/Raspoutine.otf')
 }
 
-body.out {
-  background: url('../img/bodyfont.jpg');
-  background-color: none;
-}
-
 img.flag {
   display: block;
   height: 250px;
