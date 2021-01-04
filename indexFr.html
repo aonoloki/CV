@@ -19,7 +19,7 @@
 <body class="in">
   <header id="top">
     <nav class="navbar navbar-default navbar-top">
-      <div class="container">
+      <div class="container" style="width:100%;">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="icon-bar"></span>
@@ -29,6 +29,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
+            <li><a class="js-scrollTo" href="#cv">Cursus</a></li>
             <li><a class="js-scrollTo" href="#exp">Expériences</a></li>
             <li><a class="js-scrollTo" href="#comp">Compétences</a></li>
             <li><a class="js-scrollTo" href="#form">Formation</a></li>
@@ -53,7 +54,7 @@
           <h1>ROMAIN</h1>
         </div>
         <div class="col-md-2">
-          <a data-fancybox="gallery" class="portrait" href="img/portrait.jpg">
+          <a data-fancybox="gallery" href="img/portrait.jpg">
             <img class="portrait" src="img/portrait-mini.jpg" alt="Portrait" title="Clic to zoom">
           </a>
         </div>
@@ -72,16 +73,26 @@
       </div>
     </div>
   </header>
+  <div id="cv" class="container">
+    <div class="row">
+      <article class="col-md-12 art">
+        <h2>Mon cursus</h2>
+        <ul class="exp">
+          <li><span class="date">Octobre 2020 à Juillet 2021</span> : Formation technicien supérieur système et réseau au Greta, à Douai</li>
+          <li><span class="date">Janvier à Juillet 2017</span> : Formation devWeb à PopSchool, à Anzin</li>
+          <li><span class="date">2011-2014</span> : Etudes économiques et sociales</li>
+        </ul>
+      </article>
+    </div>
+  </div>
   <div id="exp" class="container">
     <div class="row">
       <article class="col-md-12 art">
         <h2>Mon expérience</h2>
         <ul class="exp">
-          <li><span class="date">2011-2014</span>: Etudes économiques et sociales</li>
-          <li><span class="date">Juin à Septembre 2016</span>: Préparateur de commande</li>
-          <li><span class="date">Janvier à Juillet 2017</span>: Formation devWeb à PopSchool</li>
-          <li><span class="date">2018-2020</span>: Animateur et technicien pour une Webradio</li>
-          <li><span class="date">1996-2017</span>: Chercheur de voie</li>
+          <li><span class="date">2018-2020</span> : Animateur et technicien pour une Webradio</li>
+          <li><span class="date">Mai à Juin 2017</span> : Stagiaire devWeb à l'agence BigMoustache</li>
+          <li><span class="date">Juin à Septembre 2016</span> : Préparateur de commande</li>
         </ul>
       </article>
     </div>
@@ -96,13 +107,11 @@
               <li>Entretien OS</li>
               <li>Partition DD</li>
               <li>Montage ordinateur</li>
-              <li>Montage vidéo/audio/image</li>
             </ul>
           </div>
           <div class="col-md-6">
             <ul>
               <li>HTML5, CSS3</li>
-              <li>Ruby / Ruby On Rails</li>
               <li>Javascript / Jquery / Ajax</li>
               <li>PHP</li>
             </ul>
