@@ -183,8 +183,8 @@ ul.exp {
 }
 
 ul, p {
-  font-family: 'London';
-  font-size: 4vh;
+  font-family: 'raspoutine';
+  font-size: 2.5vh;
   font-weight: 400;
   color: #111;
 }
@@ -204,10 +204,10 @@ form {
 }
 
 input[type=submit], .input {
-  background-color: #004888;
+  background-color: #0f75d0;
   width: 25%;
-  font-family: 'london';
-  font-size: 4vh;
+  font-family: 'raspoutine';
+  font-size: 2.5vh;
 }
 
 .iconImg {
@@ -267,6 +267,7 @@ footer.footer.navbar-fixed-bottom {
    bottom: 1vh;
    right: 1vw;
    position: fixed;
+   height: 50px;
  }
 
  .social {
@@ -296,13 +297,14 @@ footer.footer.navbar-fixed-bottom {
   }
 
   input[type=submit], .input {
-    width: 25%;
+    width: 50%;
   }
 
   .arrow {
     bottom: 1vh;
     right: 1vw;
     position: fixed;
+    height: 50px;
   }
 
   .social {
@@ -365,7 +367,7 @@ footer.footer.navbar-fixed-bottom {
   }
 
   .portrait {
-    margin: 1vh auto 0 auto;
+    margin: 3vh auto 0 auto;
   }
 
   h2 {
@@ -379,7 +381,7 @@ footer.footer.navbar-fixed-bottom {
   }
 
   .arrow {
-    height: 8vh;
+    height: 6vh;
     bottom: 1vh;
     right: 1vw;
     position: fixed;
