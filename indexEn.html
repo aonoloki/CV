@@ -18,7 +18,7 @@
 <body class="in">
   <header id="top">
     <nav class="navbar navbar-default navbar-top">
-      <div class="container">
+      <div class="container" style="width:100%";>
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="icon-bar"></span>
@@ -28,6 +28,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
+            <li><a class="js-scrollTo" href="#cv">Curriculum</a></li>
             <li><a class="js-scrollTo" href="#exp">Experiences</a></li>
             <li><a class="js-scrollTo" href="#comp">Skills</a></li>
             <li><a class="js-scrollTo" href="#form">Training</a></li>
@@ -52,7 +53,7 @@
           <h1>ROMAIN</h1>
         </div>
         <div class="col-md-2">
-          <a data-fancybox="gallery" class="portrait" href="img/portrait.jpg">
+          <a data-fancybox="gallery" href="img/portrait.jpg">
             <img class="portrait" src="img/portrait-mini.jpg" alt="Portrait" title="Clic to zoom">
           </a>
         </div>
@@ -71,16 +72,26 @@
       </div>
     </div>
   </header>
+  <div id="cv" class="container">
+    <div class="row">
+      <article class="col-md-12 art">
+        <h2>My curriculum</h2>
+        <ul class="exp">
+          <li><span class="date">October 2020 to July 2021</span> : Training for system and network technician at Greta, in Douai.</li>
+          <li><span class="date">January to July 2017</span> : Training for webDev at PopSchool, in Anzin.</li>
+          <li><span class="date">2011-2014</span> : Socials and economics studies</li>
+        </ul>
+      </article>
+    </div>
+  </div>
   <div id="exp" class="container">
     <div class="row">
       <article class="col-md-12 art">
         <h2>My experiences</h2>
         <ul class="exp">
-          <li><span class="date">2011-2014</span>: Socials and economics studies</li>
-          <li><span class="date">June to September 2016</span>: Order picker</li>
-          <li><span class="date">January to July 2017</span>: Training for devWeb at PopSchool</li>
-          <li><span class="date">2018-2020</span>: Animator and technician for a Webradio</li>
-          <li><span class="date">1996-2017</span>: Explorer of the void</li>
+          <li><span class="date">2018-2020</span> : Animator and technician for a Webradio</li>
+          <li><span class="date">May to June 2017</span> : WebDev for Agence BigMoustache</li>
+          <li><span class="date">June to September 2016</span> : Order picker</li>
         </ul>
       </article>
     </div>
@@ -95,13 +106,11 @@
               <li>OS Keepup</li>
               <li>System partition</li>
               <li>Build a computer</li>
-              <li>Video/Audio/Picture montages</li>
             </ul>
           </div>
           <div class="col-md-6">
             <ul>
               <li>HTML5, CSS3</li>
-              <li>Ruby / Ruby On Rails</li>
               <li>Javascript / Jquery / Ajax</li>
               <li>PHP</li>
             </ul>
